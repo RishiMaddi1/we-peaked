@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>We Peaked at buying the domain</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
-      rel="stylesheet"
-    />
     <style>
+      @font-face {
+        font-family: Bungee;
+        src: url("fonts/Bungee-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
       :root {
         --red: #e30613;
       }
@@ -33,7 +35,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: Bungee, "Comic Sans MS", "Comic Sans", cursive;
+        font-family: Bungee, sans-serif;
         text-align: center;
         padding: 32px 20px;
       }
@@ -50,15 +52,14 @@
         width: min(640px, 94vw);
         height: auto;
         display: block;
-        image-rendering: auto;
       }
 
       h1 {
-        font-family: Bungee, cursive;
+        font-family: Bungee, sans-serif;
         font-weight: 400;
-        font-size: clamp(1.6rem, 5.2vw, 3.15rem);
-        line-height: 1.22;
-        letter-spacing: 0.02em;
+        font-size: clamp(1.7rem, 5.4vw, 3.25rem);
+        line-height: 1.2;
+        letter-spacing: 0.04em;
         color: var(--red);
         text-transform: uppercase;
         text-wrap: balance;
